@@ -1,16 +1,29 @@
 .plant-input{
 margin: 10px;
-display: block;
 padding: 5px 10px;
 border-radius: 5px;
-width: 200px;
+width: 250px;
 }
 
 .button{
+    background-color: #3b2af9;
+    border: none;
+    color: white;
     padding: 5px 20px;
     margin: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover{
+    width: 102px;
+    background-color: #1805e7;
+    border: none;
+    box-shadow: 0 0 3px 2px #0f02a0;
+    color: white;
+
+
 }
 
 .img-preview{
@@ -18,4 +31,14 @@ width: 200px;
     height: 100px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.input-container{
+    background-color: rgb(107, 177, 253);
+    border-radius: 7px;
+    width: 420px;
+    height: 470px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }

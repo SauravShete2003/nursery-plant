@@ -33,7 +33,7 @@ function AddPlant() {
   };
 
   return (
-    <div>
+    <div className="input-container">
       <h1>Add Plant</h1>
       <from>
         <input
@@ -42,7 +42,7 @@ function AddPlant() {
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-        />
+        /><br/>
 
         <input
           className="plant-input"
@@ -52,7 +52,7 @@ function AddPlant() {
           onChange={(e) => {
             setPrice(e.target.value);
           }}
-        />
+        /><br/>
 
         <input
           className="plant-input"
@@ -62,18 +62,18 @@ function AddPlant() {
           onChange={(e) => {
             setCategory(e.target.value);
           }}
-        />
-        <img src={image} className="img-preview"/>
+        /><br/>
+        <img src={image} className="img-preview"/><br/>
 
         <input
           className="plant-input"
           type="text"
-          placeholder="Enter plant imageUrl"
+          placeholder="Enter plant image Url"
           value={image}
           onChange={(e) => {
             setImage(e.target.value);
           }}
-        />
+        /><br/>
 
         <button className="button" onClick={addPlant} type="button">
           Add Plant
@@ -81,7 +81,7 @@ function AddPlant() {
         <br/>
         <br/>
         <Link to={"/"}>
-        <button className="button">Go To Home</button>
+        <button className="button">Go Home</button>
         </Link>
       </from>
       <Toaster />
