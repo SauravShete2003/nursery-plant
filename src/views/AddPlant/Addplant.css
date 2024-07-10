@@ -1,0 +1,21 @@
+.plant-input{
+margin: 10px;
+display: block;
+padding: 5px 10px;
+border-radius: 5px;
+width: 200px;
+}
+
+.button{
+    padding: 5px 20px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-preview{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}

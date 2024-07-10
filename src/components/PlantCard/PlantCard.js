@@ -1,14 +1,14 @@
 import React from 'react';
 import "./PlantCard.css";
 
-function PlantCard({ name, category, image, price, description }) {
+function PlantCard({ name, category, image, price }) {
   return (
     <div className='plant-container'>
       <h1 className='plant-title'>{name}</h1>
-      <img className='plant-image' src={image} alt={name} />
       <p className='plant-category'>{category}</p>
-      <p className='plant-price'>${price}</p>
-      <p className='plant-description'>{description}</p>
+      <span className="plant-price" >{price}</span>
+      <img className='plant-image' src={image} alt={name} />
+     
     </div>
   );
 }
