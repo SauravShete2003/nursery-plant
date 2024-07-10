@@ -32,12 +32,13 @@ function Home() {
         return (
           <PlantCard
             key={i}
-            id={_id}
+            _id={_id}
             name={name}
             image={image}
             category={category}
             price={price}
             description={description} 
+            loadPlants={loadPlants}
           />);
       })}
      <Toaster/>

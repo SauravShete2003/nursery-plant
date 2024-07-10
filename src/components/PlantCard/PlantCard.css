@@ -1,35 +1,51 @@
-.plant-container{
-    position: relative;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: azure;
-    border: none;
-    box-shadow: 0 0 3px 3px gray;
+.plant-container {
+  position: relative;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: azure;
+  border: none;
+  box-shadow: 0 0 3px 3px gray;
 }
 
-.plant-image{
-    border-radius: 5px;
-    width: 200px;
-    height: 140px;
-    object-fit: cover;
-    position: absolute;
-    top: 12px;
-    cursor: pointer;
-    right: 15px;
+.plant-image {
+  border-radius: 5px;
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+ right: 5%;
 }
-.plant-image:hover{
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
-}
-
-.plant-category{
-    font-size: 20px;
-    font-weight: 600;
+.plant-image:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }
 
-.plant-price{
-    font-size: 20px;
-    font-weight: 600;
+.plant-category {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plant-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plant-card-action-edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 25%;
+  width: 30px;
+  cursor: pointer;
+}
+
+.plant-card-action-delete-btn {
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
 }
