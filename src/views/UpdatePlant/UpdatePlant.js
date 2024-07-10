@@ -44,7 +44,7 @@ function UpdatePlant() {
   }, [id]);
 
   return (
-    <div>
+    <div className="update-container">
       <h1>Update Plant</h1>
       <from>
         <input
@@ -91,7 +91,7 @@ function UpdatePlant() {
         />
         <br />
 
-        <button className="button"
+        <button className="update-btn"
         onClick={updatePlant}
          type="button">
           Update Plant
@@ -99,7 +99,7 @@ function UpdatePlant() {
         <br />
         <br />
         <Link to={"/"}>
-          <button className="button">Go Home</button>
+        <button className="update-btn">Go Home</button>
         </Link>
       </from>
       <Toaster/>

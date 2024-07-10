@@ -3,7 +3,7 @@ import PlantCard from "./../../components/PlantCard/PlantCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import toast,{Toaster} from "react-hot-toast";
-import addImg from "./plus.png"
+import addImg from "./gallery.png"
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -25,8 +25,10 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <h1>Plants</h1>
+    <>
+    <h1 style={{textAlign:"center"}}>Plants</h1>
+    <div className="home-container">
+  
       {plants.map((plant, i) => {
         const { _id, name, image, category, price, description } = plant;
         return (
@@ -47,6 +49,7 @@ function Home() {
      </Link>
 
     </div>
+    </>
    
   );
 }

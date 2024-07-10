@@ -14,10 +14,11 @@ function PlantCard({ _id ,name, category, image, price, loadPlants }) {
   }
   return (
     <div className='plant-container'>
+      <img className='plant-image' src={image} alt={name} />
       <h1 className='plant-title'>{name}</h1>
       <p className='plant-category'>{category}</p>
       <span className="plant-price" >{price}</span>
-      <img className='plant-image' src={image} alt={name} />
+      
       <div>
         
         <Link to={`/update/${_id}`}>
