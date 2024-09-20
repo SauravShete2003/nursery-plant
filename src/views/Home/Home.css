@@ -1,5 +1,8 @@
-body{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; 
 }
 
 .add-img{
@@ -9,11 +12,4 @@ body{
     right: 15px;
     top: 10px;
     cursor: pointer;
-}
-.home-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
 }

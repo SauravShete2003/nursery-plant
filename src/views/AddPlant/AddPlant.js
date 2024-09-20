@@ -3,6 +3,7 @@ import "./Addplant.css";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Homeimg from "./home (1).png"
 function AddPlant() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
@@ -10,26 +11,27 @@ function AddPlant() {
   const [category, setCategory] = useState("");
 
   const addPlant = async () => {
-    toast.loading("Adding Plant")
+    toast.loading("Adding Plant");
     if (!name || !price || !category || !image) {
       toast.error("please enter all details");
       return;
     }
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/plant`,{
+    const response = await axios.post(
+      `${process.env.REACT_APP_API_URL}/plant`,
+      {
         name: name,
         price: price,
         image: image,
-        category: category
-    });
-    toast.dismiss()
-    toast.success(response.data.message)
+        category: category,
+      }
+    );
+    toast.dismiss();
+    toast.success(response.data.message);
 
-    setName('')
-    setPrice(0)
-    setImage('')
-    setCategory('')
-
-    
+    setName("");
+    setPrice(0);
+    setImage("");
+    setCategory("");
   };
 
   return (
@@ -42,7 +44,8 @@ function AddPlant() {
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-        /><br/>
+        />
+        <br />
 
         <input
           className="plant-input"
@@ -52,7 +55,8 @@ function AddPlant() {
           onChange={(e) => {
             setPrice(e.target.value);
           }}
-        /><br/>
+        />
+        <br />
 
         <input
           className="plant-input"
@@ -62,8 +66,10 @@ function AddPlant() {
           onChange={(e) => {
             setCategory(e.target.value);
           }}
-        /><br/>
-        <img src={image} className="img-preview"/><br/>
+        />
+        <br />
+        <img src={image} className="img-preview" />
+        <br />
 
         <input
           className="plant-input"
@@ -73,15 +79,16 @@ function AddPlant() {
           onChange={(e) => {
             setImage(e.target.value);
           }}
-        /><br/>
+        />
+        <br />
 
         <button className="button" onClick={addPlant} type="button">
           Add Plant
         </button>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Link to={"/"}>
-        <button className="button">Go Home</button>
+          <img src={Homeimg} className="home-btn" alt="homebutton"/>
         </Link>
       </from>
       <Toaster />

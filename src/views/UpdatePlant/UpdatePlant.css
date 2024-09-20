@@ -1,29 +1,26 @@
-.update-btn{
-    cursor: pointer;
-    background-color: black;
-    border: none;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 8px 17px;
-    border-radius: 5px;
-    width: 130px;
-    margin-top: 5px;
-    
+.update-btn {
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 17px;
+  border-radius: 5px;
+  width: 130px;
+  margin-top: 5px;
 }
-.update-btn:hover{
-    background-color: #fff;
-    color: #000;
-   
-    
+.update-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
-.update-container{
-    color:#000;
-    border-radius: 7px;
-    text-align: center;
-    width: 400px;
-    height: 470px;
-    margin: 5px auto;
-    background-color: rgb(86, 123, 132);
+.update-container {
+  color: #000;
+  border-radius: 7px;
+  text-align: center;
+  width: 400px;
+  height: 470px;
+  margin: 5px auto;
+  background-color: rgb(86, 123, 132);
 }

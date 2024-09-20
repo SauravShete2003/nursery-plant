@@ -26,8 +26,8 @@ function Home() {
 
   return (
     <>
-    <h1 style={{textAlign:"center"}}>Plants</h1>
-    <div className="home-container">
+    <h1 style={{textAlign:"center"}}>All Plants</h1>
+    <div className="home-container" style={{flexWrap : 'wrap'}}>
   
       {plants.map((plant, i) => {
         const { _id, name, image, category, price, description } = plant;
